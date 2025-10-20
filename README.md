@@ -24,6 +24,34 @@ Platforms
     
 *   ✅ iOS
 
+**WeatherService** automatically fetches forecasts from WeatherAPI when you select a city. The service handles all API communication and data parsing behind the scenes.
+
+Running on Android
+------------------
+
+*    Open NNChallenge.sln in Visual Studio
+
+*    Set NNChallenge.Droid as startup project
+
+*    Select Android emulator or device
+
+*    Build and run (F5)
+
+Running on iOS
+---------------------
+
+*    Requires Mac with Xcode
+
+*    Connect to Mac agent from Visual Studio
+
+*    Set NNChallenge.iOS as startup project
+
+*    Select iOS simulator or device
+
+*    Build and run (F5)
+
+
+
 Outputs
 ------------
 <img width="293" height="648" alt="image" src="https://github.com/user-attachments/assets/32107df5-2101-47a7-9724-72a271d9f71f" />
