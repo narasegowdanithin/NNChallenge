@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>21.0</SupportedOSPlatformVersion>
+    <AndroidSupportedApiLevels>21</AndroidSupportedApiLevels>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NNChallenge\NNChallenge.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.7.0.7" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.1.2" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.12.0.4" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+## .NET ##
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.usertasks
+*.log
+*.vs/
+.vs/
+.DS_Store
+
+## Build Results ##
+[Bb]in/
+[Oo]bj/
+*.lock.json
+*.csproj.user
+
+## NuGet ##
+[Nn]u[Gg]et/
+*.nupkg
+packages/
+
+## MAUI Specific ##
+Resources/Raw/
+*.apk
+*.aab
+*.ipa
+*.dsym.zip
+*.app
+*.pdb
+*.dll
+*.exe
+
+## IDE ##
+.vscode/
+.idea/
+*.swp
+*.swo
+
+## OS ##
+.DS_Store
+Thumbs.db

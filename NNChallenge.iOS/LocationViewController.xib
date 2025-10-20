@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationViewController">
+            <connections>
+                <outlet property="_contentLabel" destination="eB9-Yu-ZoA" id="8uo-gi-TD6"/>
+                <outlet property="_picker" destination="hsJ-Co-wPk" id="sRt-DB-Mqs"/>
+                <outlet property="_submitButton" destination="xjg-ve-ymN" id="TnV-Nq-G2H"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-Yu-ZoA" userLabel="Content Label">
+                    <rect key="frame" x="16" y="60" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-Co-wPk">
+                    <rect key="frame" x="0.0" y="97" width="414" height="216"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-ve-ymN" userLabel="Submit Button">
+                    <rect key="frame" x="16" y="815" width="382" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tSK-fS-5oa"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eB9-Yu-ZoA" firstAttribute="leading" secondItem="tSK-fS-5oa" secondAttribute="leading" constant="16" id="141-DG-KMU"/>
+                <constraint firstItem="eB9-Yu-ZoA" firstAttribute="top" secondItem="tSK-fS-5oa" secondAttribute="top" constant="16" id="764-In-c6W"/>
+                <constraint firstItem="tSK-fS-5oa" firstAttribute="trailing" secondItem="xjg-ve-ymN" secondAttribute="trailing" constant="16" id="KdH-X8-Oa0"/>
+                <constraint firstItem="tSK-fS-5oa" firstAttribute="trailing" secondItem="hsJ-Co-wPk" secondAttribute="trailing" id="ake-t0-ViT"/>
+                <constraint firstItem="hsJ-Co-wPk" firstAttribute="leading" secondItem="tSK-fS-5oa" secondAttribute="leading" id="bd1-Vm-82y"/>
+                <constraint firstItem="hsJ-Co-wPk" firstAttribute="top" secondItem="eB9-Yu-ZoA" secondAttribute="bottom" constant="16" id="brc-aJ-hgl"/>
+                <constraint firstItem="tSK-fS-5oa" firstAttribute="trailing" secondItem="eB9-Yu-ZoA" secondAttribute="trailing" constant="16" id="hIe-Ov-ylX"/>
+                <constraint firstItem="tSK-fS-5oa" firstAttribute="bottom" secondItem="xjg-ve-ymN" secondAttribute="bottom" constant="16" id="qJA-M6-i9U"/>
+                <constraint firstItem="xjg-ve-ymN" firstAttribute="leading" secondItem="tSK-fS-5oa" secondAttribute="leading" constant="16" id="zyD-jq-37h"/>
+            </constraints>
+            <point key="canvasLocation" x="82" y="-21"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastViewController" customModule="NNChallenge_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="cityLabel" destination="4" id="5"/>
+                <outlet property="dateHeaderLabel" destination="6" id="7"/>
+                <outlet property="tableView" destination="3" id="8"/>
+                <outlet property="loadingIndicator" destination="9" id="10"/>
+                <outlet property="errorLabel" destination="11" id="12"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <!-- Navigation Bar -->
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2" userLabel="NavBar">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="13"/>
+                    </constraints>
+                </view>
+                
+                <!-- City Label -->
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRACY, CA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="116" width="414" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                
+                <!-- Date Header -->
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 19, 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                    <rect key="frame" x="0.0" y="162" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="14"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                
+                <!-- Table View -->
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="0.0" sectionFooterHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="212" width="414" height="650"/>
+                </tableView>
+                
+                <!-- Loading Indicator -->
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+                
+                <!-- Error Label -->
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error loading data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                    <rect key="frame" x="20" y="438" width="374" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="2" firstAttribute="top" secondItem="1" secondAttribute="safeAreaLayoutGuide.top" id="15"/>
+                <constraint firstItem="2" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="16"/>
+                <constraint firstItem="2" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="17"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="2" secondAttribute="bottom" constant="16" id="18"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="19"/>
+                <constraint firstItem="4" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="20"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="16" id="21"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="22"/>
+                <constraint firstItem="6" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="23"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="6" secondAttribute="bottom" id="24"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="25"/>
+                <constraint firstItem="3" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="26"/>
+                <constraint firstItem="3" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="27"/>
+                <constraint firstItem="9" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="28"/>
+                <constraint firstItem="9" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="29"/>
+                <constraint firstItem="11" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="30"/>
+                <constraint firstItem="11" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="31"/>
+                <constraint firstItem="11" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" constant="-20" id="32"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vDu-zF-9hD"/>
+        </view>
+    </objects>
+</document>
