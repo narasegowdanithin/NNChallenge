@@ -50,4 +50,4 @@ Architecture
 API
 ---
 
-Uses [WeatherAPI.com](https://weatherapi.com/) for real-time weather data with 3-day forecasts.
+Uses [WeatherAPI.com](https://www.weatherapi.com/) for real-time weather data with 3-day forecasts.
